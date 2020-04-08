@@ -1,28 +1,159 @@
-# Exception Reporter.NET
+# Shark.NET Error Reporter 
+```Last Updated: 2018-08-16 by  Javier Cañon```
 
-[![AppVeyor Tests](https://img.shields.io/appveyor/ci/gruntjs/grunt/master.svg)](https://ci.appveyor.com/project/pandawood/exceptionreporter-net/build/tests)
-&nbsp;[![NuGet Badge](https://buildstats.info/nuget/ExceptionReporter)](https://www.nuget.org/packages/ExceptionReporter/)
+*Refactor* and *Made* with KISS principles ([Keep It Stupid Simple](http://people.apache.org/~fhanik/kiss.html))
+
+## Whats New?
+* Support for .net 4.8 for lasted framework improvements.
+
+
+## Philosophy of Javier Cañon
+* KISS by design and programming. An acronym for "keep it simple, stupid" or "keep it stupid simple", is a design principle. The KISS principle states that most systems work best if they are kept simple rather than made complicated; therefore, simplicity should be a key goal in design, and unnecessary complexity should be avoided. Variations on the phrase include: "Keep it simple, silly", "keep it short and simple", "keep it simple and straightforward", "keep it small and simple", or "keep it stupid simple".
+
+* Select the best tools for the job, use tools that take less time to finish the job.
+* Productivity over complexity and avoid unnecessary complexity for elegant or beauty code.
+
+* Computers are machines, more powerful every year, give them hard work, concentrate on being productive.
+
+
+## Requeriments ##
+
+* Windows 8.1, 10.
+* .Net Framework 4.8.
+
+
+## Installing
+
+
+## Releases
+> For lasted release download from [Releases Menu](https://github.com/JavierCanon/Shark.NET-Error-Reporter/releases)
+- Please Read [RELEASE](RELEASE.md) for details.
+
+## Report Issues, Bugs
+- Please first search for the issue and if not found then report it.
+> [Issues Menu](https://github.com/JavierCanon/Shark.NET-Error-Reporter/issues)
+
+## Roadmap
+- Please Read [ROADMAP](ROADMAP.md) for details.
+
+## Change Log
+- Please Read [CHANGE LOG](CHANGELOG.md) for details.
+
+## Contributing
+- Please Read the [Contributing Guidelines](CONTRIBUTING.md) for details.
+
+## Getting Started
+
+These instructions will get you a copy of the project 
+up and running on your local machine for development and testing purposes.
+See deployment for notes on how to deploy the project on a live system.
+
+
+### Prerequisites
+
+What things you need to install the software and how to install them
 
 ```
-PM> Install-Package ExceptionReporter
+Give examples
 ```
+
+### Installing
+
+A step by step series of examples that tell you how to get a development 
+env running
+
+Say what the step will be
+
+```
+Give the example
+```
+
+And repeat
+
+```
+until finished
+```
+
+End with an example of getting some data out of the system 
+or using it for a little demo
+
+
+## Running the tests
+
+Explain how to run the automated tests for this system
+
+
+### Break down into end to end tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+### And coding style tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+## Deployment
+
+Add additional notes about how to deploy this on a live system
+
+
+## Built With
+
+* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [Maven](https://maven.apache.org/) - Dependency Management
+* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+
+## Contributing
+
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+
+## Authors
+
+* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Hat tip to anyone whose code was used
+* Inspiration
+* etc
+
+
+
+## This is a Fork From ExceptionReporter.NET
 
 ## How it Looks
 
 If you choose to show a dialog (reports can also be sent silently) there are 2 *modes* - *Less Detail* and *More Detail*
 
 ### **Less Detail** mode
-![Compact Mode](images/er2-less-detail.png)
+![Compact Mode](docs/images/er2-less-detail.png)
 
 ### **More Detail** mode
-![More Detail Mode](images/er2-more-detail.png)
+![More Detail Mode](docs/images/er2-more-detail.png)
 
 #### Interface Configuration Options
 In the next screenshot, we have an example of some customization that can be made with *configuration*. 
 There are no images on the buttons,
 the window title is customised and an extra Tab (_Contact_) is visible
 
-![Customized Example](images/er-customized.png)
+![Customized Example](docs/images/er-customized.png)
 
 The buttons for *More detail* and *Less Detail* allow the user to switch between these modes.
 
@@ -109,4 +240,16 @@ Operating System
 --Manufacturer = Gigabyte Technology Co., Ltd.
 --Model = P35-DS3L
 --TotalPhysicalMemory = 3756515328
-  ```
+```
+
+# Contributors / Code From
+ - [Javier Cañon](https://www.javiercanon.com)
+ - Peter van der Woude
+ - [Manish Ranjan Kumar](https://www.codeproject.com/Members/Manish-Ranjan-Kumar) 
+
+## License
+
+This project is licensed under the GNU AFFERO GENERAL PUBLIC LICENSE Version 3 - see the [LICENSE.md](/LICENSE.md) file for details.
+
+---
+Made with ❤️ by **[Javier Cañon](https://www.javiercanon.com)**.

@@ -60,6 +60,7 @@
     </CustomCommands>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <NoStdLib>false</NoStdLib>
+    <CodeAnalysisRuleSet />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <Optimize>true</Optimize>
@@ -70,6 +71,7 @@
     <DocumentationFile>bin\Release\ExceptionReporter.NET.xml</DocumentationFile>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <NoStdLib>false</NoStdLib>
+    <CodeAnalysisRuleSet />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

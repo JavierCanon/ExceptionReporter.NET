@@ -1,0 +1,13 @@
+extensions: designer.cs generated.cs
+extensions: .cs .cpp .h
+// GNU License Copyright (c) 2020 Javier Cañon | https://www.javiercanon.com
+extensions: .aspx .ascx
+<%-- 
+GNU License Copyright (c) 2020 Javier Cañon | https://www.javiercanon.com
+--%>
+extensions: .vb
+'GNU License Copyright (c) 2020 Javier Cañon | https://www.javiercanon.com
+extensions:  .xml .config .xsd
+<!--
+GNU License Copyright (c) 2020 Javier Cañon | https://www.javiercanon.com
+-->
