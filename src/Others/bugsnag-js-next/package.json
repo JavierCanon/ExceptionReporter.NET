@@ -1,0 +1,53 @@
+{
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-syntax-object-rest-spread": "^7.0.0",
+    "@babel/plugin-transform-arrow-functions": "^7.0.0",
+    "@babel/plugin-transform-block-scoping": "^7.0.0",
+    "@babel/plugin-transform-classes": "^7.0.0",
+    "@babel/plugin-transform-computed-properties": "^7.0.0",
+    "@babel/plugin-transform-destructuring": "^7.0.0",
+    "@babel/plugin-transform-member-expression-literals": "^7.0.0",
+    "@babel/plugin-transform-parameters": "^7.0.0",
+    "@babel/plugin-transform-property-literals": "^7.0.0",
+    "@babel/plugin-transform-shorthand-properties": "^7.0.0",
+    "@babel/plugin-transform-spread": "^7.0.0",
+    "@babel/plugin-transform-template-literals": "^7.0.0",
+    "babelify": "^10.0.0",
+    "browser-pack-flat": "^3.2.0",
+    "browserify": "^16.2.2",
+    "browserify-versionify": "^1.0.6",
+    "envify": "^4.1.0",
+    "exorcist": "^1.0.1",
+    "lerna": "^3.19.0",
+    "standard": "^11.0.1",
+    "uglify-js": "^3.4.9"
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build --scope '@bugsnag/node' --scope '@bugsnag/browser' --scope '@bugsnag/expo' && lerna run build --ignore '@bugsnag/node' --ignore '@bugsnag/browser' --ignore '@bugsnag/expo'",
+    "test:lint": "standard",
+    "test:unit": "lerna run test --ignore '@bugsnag/browser' --ignore '@bugsnag/node'",
+    "test:types": "lerna run test:types",
+    "test:test-container-registry-login": "$(aws ecr get-login --profile=opensource --no-include-email)",
+    "test:build-browser-container": "docker-compose up --build minimal-packager && docker-compose build --pull browser-maze-runner",
+    "test:build-node-container": "docker-compose up --build minimal-packager && docker-compose build --pull node-maze-runner",
+    "test:build-expo-android-container": "test/expo/scripts/build-android-locally.sh",
+    "test:build-expo-ios-container": "EXPO_RELEASE_CHANNEL=localtest test/expo/scripts/build-ios-locally.sh",
+    "test:browser": "npm run test:build-browser-container && docker-compose run --use-aliases browser-maze-runner",
+    "test:node": "npm run test:build-node-container && docker-compose run --use-aliases node-maze-runner",
+    "test:expo:android": "npm run test:build-expo-android-container && APP_LOCATION=build/output.apk docker-compose run --use-aliases expo-maze-runner",
+    "test:expo:ios": "npm run test:build-expo-ios-container && APP_LOCATION=build/output.ipa docker-compose run --use-aliases expo-maze-runner"
+  },
+  "standard": {
+    "ignore": [
+      "dist",
+      "examples",
+      "features",
+      "**/node_modules/**",
+      "fixtures",
+      "scratch"
+    ]
+  }
+}

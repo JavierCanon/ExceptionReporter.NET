@@ -1,0 +1,13 @@
+﻿// ErrorReportSettings template. 
+{
+  "DbConnectionString": "",
+  "LogToLocalFile": false,
+  "LocalLogFilePath": "",
+  "LogToMsSql": false,
+  "SendGridAPIKey": "",
+  "SenderEmail": "",
+  "SenderName": "",
+  "ErrorLogRecipientEmail": "",
+  "ErrorLogRecipientName": "",
+  "ErrorEmailTemplateId": ""
+}

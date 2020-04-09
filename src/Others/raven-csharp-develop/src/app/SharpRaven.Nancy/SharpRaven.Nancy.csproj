@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net471;net45;net40</TargetFrameworks>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+
+    <PackageId>SharpRaven.Nancy</PackageId>
+    <PackageIconUrl>https://raw.githubusercontent.com/getsentry/raven-csharp/master/sentry-icon.png</PackageIconUrl>
+    <PackageTags>raven sentry logging nancy</PackageTags>
+    <Title>.NET client for Sentry (getsentry.com) running on Nancy</Title>
+    <Description>Raven is a C# client for Sentry (getsentry.com and github.com/getsentry/sentry)</Description>
+    <Copyright>Copyright 2014 The Sentry Team and individual contributors</Copyright>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>$(ReleaseNotes)</PackageReleaseNotes>
+    <Authors>Sentry Team</Authors>
+    <Owners>asbjornu, xpicio</Owners>
+    <PackageProjectUrl>https://github.com/getsentry/raven-csharp</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/getsentry/raven-csharp.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <Import Project="..\..\CommonConfigurations.targets" />
+
+  <ItemGroup>
+    <ProjectReference Include="..\SharpRaven\SharpRaven.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net40' or '$(TargetFramework)' == 'net45' or '$(TargetFramework)' == 'net471'">
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Nancy" Version="1.4.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\CommonAssemblyInfo.cs" Link="Properties\CommonAssemblyInfo.cs" />
+  </ItemGroup>
+</Project>

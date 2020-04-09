@@ -1,0 +1,27 @@
+image: Visual Studio 2017
+install:
+  - set PATH=C:\Ruby25-x64\bin;%PATH%
+build_script:
+  - ps: .\build.ps1 -Target Appveyor
+after_build:
+  - ps: 7z a build\bugsnag.zip build\Release\**\Bugsnag*.dll build\Release\**\Bugsnag*.pdb
+test: off
+artifacts:
+  - path: 'build\packages\*.nupkg'
+  - path: 'build\bugsnag.zip'
+deploy:
+  - provider: NuGet
+    api_key:
+      secure: X9kbHgyAVS0K82qDvjVm9BzE8W1Yu/+Tjd9uLGFKqzrXu4B78V1dIWZ5usa0reVq
+    skip_symbols: false
+    artifact: /.*\.nupkg/
+    on:
+      appveyor_repo_tag: true
+  - provider: GitHub
+    description: draft release
+    auth_token:
+      secure: fS4KNFA01HMw4lYhlOHd3Upi18Ih1i5wU2Lp0tPaeiUNf69wTXYH70pLFpgDHZlW
+    artifact: build\bugsnag.zip
+    draft: true
+    on:
+      appveyor_repo_tag: true

@@ -1,0 +1,16 @@
+﻿<Project>
+  <PropertyGroup>
+    <Authors>snmaynard kattrali martin308</Authors>
+    <Version></Version>
+    <Copyright>© 2018 Bugsnag Inc.</Copyright>
+    <PackageTags>bugsnag crash exception-handling exception-reporting exception-handler error-monitoring error-reporting error-handling unhandled-exceptions debug exceptions error errors bug bugs crash-reporting crash-reporting-tool error-log diagnostic</PackageTags>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/bugsnag/bugsnag-dotnet/master/LICENSE.txt</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/bugsnag/bugsnag-dotnet</PackageProjectUrl>
+    <PackageIconUrl>https://s3.amazonaws.com/bugsnag.com/images/square-logo-small.png</PackageIconUrl>
+    <DisableImplicitFrameworkReferences Condition="'$(TargetFramework)' != 'netstandard1.3' AND '$(TargetFramework)' != 'netstandard2.0'">true</DisableImplicitFrameworkReferences>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <LangVersion>7.1</LangVersion>
+    <WarningsAsErrors />
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+</Project>

@@ -1,7 +1,5 @@
-# Shark.NET Error Reporter 
-```Last Updated: 2018-08-16 by  Javier Cañon```
+# Social-Office-Error-Reporting
 
-*Refactor* and *Made* with KISS principles ([Keep It Stupid Simple](http://people.apache.org/~fhanik/kiss.html))
 
 ## Whats New?
 * Support for .net 4.8 for lasted framework improvements.
@@ -15,6 +13,7 @@
 
 * Computers are machines, more powerful every year, give them hard work, concentrate on being productive.
 
+* Often people, especially computer engineers, focus on the machines. They think, "By doing this, the machine will run fast. By doing this, the machine will run more effectively. By doing this, the machine will something something something." They are focusing on machines. But in fact we need to focus on humans, on how humans care about doing programming or operating the application of the machines. We are the masters. They are the slaves. **[Yukihiro Matsumoto]**.
 
 ## Requeriments ##
 
@@ -26,12 +25,12 @@
 
 
 ## Releases
-> For lasted release download from [Releases Menu](https://github.com/JavierCanon/Shark.NET-Error-Reporter/releases)
+> For lasted release download from [Releases Menu](https://github.com/JavierCanon/Social-Office-Error-Reporting/releases)
 - Please Read [RELEASE](RELEASE.md) for details.
 
 ## Report Issues, Bugs
 - Please first search for the issue and if not found then report it.
-> [Issues Menu](https://github.com/JavierCanon/Shark.NET-Error-Reporter/issues)
+> [Issues Menu](https://github.com/JavierCanon/Social-Office-Error-Reporting/issues)
 
 ## Roadmap
 - Please Read [ROADMAP](ROADMAP.md) for details.
@@ -242,14 +241,36 @@ Operating System
 --TotalPhysicalMemory = 3756515328
 ```
 
-# Contributors / Code From
- - [Javier Cañon](https://www.javiercanon.com)
- - Peter van der Woude
- - [Manish Ranjan Kumar](https://www.codeproject.com/Members/Manish-Ranjan-Kumar) 
+
+## Credits / Authors
+
+- [Peter van der Woude](https://github.com/PandaWood/ExceptionReporter.NET) for Original Project.
+- [Manish Ranjan Kumar](https://www.codeproject.com/Members/Manish-Ranjan-Kumar) 
+- [Javier Cañon](https://javiercanon.com)
+
+See also the list of [contributors](/AUTHORS.md) who participated in this project.
+
+
+## Supported by, thanks to 
+
+![Caphyon](https://raw.githubusercontent.com/JavierCanon/Social-Office-Browser/master/docs/img/advanced-installer-iconNavLogo.png)
+
+[Caphyon Advanced Installer](https://www.advancedinstaller.com) 
+-- 
+
+![Softcanon](https://github.com/JavierCanon/Social-Office-Webackeitor/raw/master/docs/images/logo_softcanon_200x75.gif) 
+
+[Softcanon](https://www.softcanon.com) 
+-- 
+
+* [SQL Pretty Printer for SQL Server](http://www.dpriver.com/products/sqlpp/index.php) 
+-- 
 
 ## License
 
 This project is licensed under the GNU AFFERO GENERAL PUBLIC LICENSE Version 3 - see the [LICENSE.md](/LICENSE.md) file for details.
 
 ---
-Made with ❤️ by **[Javier Cañon](https://www.javiercanon.com)**.
+Made with ❤️ by **[Javier Cañon](https://javiercanon.com)**.
+
+
